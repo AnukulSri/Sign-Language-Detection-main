@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('{{ url_for("static", filename="i1.png") }}'); /* Replace with the correct image path */
+            background-size: cover; /* Ensures the background image covers the whole screen */
+            background-position: center; /* Centers the background image */
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>🤚 Real-Time Sign Language Recognition ✋</h1>
+    </header>
+    <main>
+        <div class="video-container">
+            <img src="/video" id="video-stream" alt="Hand Gesture Recognition">
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Sign Language Recognition | Developed By Niwedita Pandey</p>
+      
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
